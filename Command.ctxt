@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Command
+comment0.text=\n\ This\ class\ is\ part\ of\ the\ "World\ of\ Zuul"\ application.\ \n\ "World\ of\ Zuul"\ is\ a\ very\ simple,\ text\ based\ adventure\ game.\ \ \n\n\ This\ class\ holds\ information\ about\ a\ command\ that\ was\ issued\ by\ the\ user.\n\ A\ command\ currently\ consists\ of\ two\ strings\:\ a\ command\ word\ and\ a\ second\n\ word\ (for\ example,\ if\ the\ command\ was\ "take\ map",\ then\ the\ two\ strings\n\ obviously\ are\ "take"\ and\ "map").\n\ \n\ The\ way\ this\ is\ used\ is\:\ Commands\ are\ already\ checked\ for\ being\ valid\n\ command\ words.\ If\ the\ user\ entered\ an\ invalid\ command\ (a\ word\ that\ is\ not\n\ known)\ then\ the\ command\ word\ is\ <null>.\n\n\ If\ the\ command\ had\ only\ one\ word,\ then\ the\ second\ word\ is\ <null>.\n\ \n\ @author\ \ Michael\ K\u00F6lling\ and\ David\ J.\ Barnes\n\ @version\ 2016.02.29\n
+comment1.params=commandWordList
+comment1.target=Command(java.util.ArrayList)
+comment1.text=\n\ Create\ a\ command\ object.\ Stores\ all\ seperate\ words\ in\ the\ list.\n\ \ \ \ \n\ @param\ firstWord\ The\ list\ of\ all\ seperate\ words\ of\ the\ user\ input.\n
+comment2.params=n
+comment2.target=java.lang.String\ getNthWord(int)
+comment2.text=\n\ Return\ the\ nth\ word\ of\ this\ command\ where\ n\ is\ from\ 1\ to\ (total\ number\ of\ words).\n\ The\ actual\ index\ of\ the\ word\ to\ access\ in\ the\ list\ is\ n-1.\n\ If\ the\ command\ was\ not\ understood\ or\ there's\ no\ word\ of\ index\ \ n\ in\ the\ list,\ the\ result\ is\ null.\n\ \n\ @parm\ n\ The\ integer\ from\ 1\ to\ point\ out\ the\ word\ to\ interpret.\n\ @return\ nth\ word\ of\ the\ command\n
+comment3.params=n
+comment3.target=boolean\ hasNthWord(int)
+comment3.text=\n\ Return\ whether\ there\ exists\ nth\ word.\n\ \n\ @n\ The\ integer\ from\ 1\ to\ point\ out\ the\ word\ to\ interpret.\n\ @return\ True\ if\ this\ command\ has\ a\ nth\ word.\n
+numComments=4
